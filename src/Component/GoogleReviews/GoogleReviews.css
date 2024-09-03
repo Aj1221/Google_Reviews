@@ -1,0 +1,136 @@
+/* src/GoogleReviews.css */
+
+.google-reviews {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 16px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.google-reviews .review {
+    margin-top: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 16px 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+
+.google-reviews .review:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.google-reviews .review:last-child {
+    border-bottom: none;
+}
+
+.google-reviews .review h4 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.google-reviews .review p {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.google-reviews .load-more {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.google-reviews .load-more:hover {
+    background-color: #0056b3;
+}
+
+.google-reviews label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* New styles for the sorting section */
+.google-reviews .sort-container {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    padding: 10px;
+    background-color: #fff; /* White background for the sorting container */
+    border-radius: 6px; /* Slightly rounded corners */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.google-reviews .sort-container label {
+    margin-right: 10px; /* Space between label and dropdown */
+    font-size: 16px;
+    color: #333;
+}
+
+.google-reviews .sort-container select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ddd; /* Light border color */
+    border-radius: 4px; /* Rounded corners for the dropdown */
+    background-color: #fff; /* White background for the dropdown */
+    color: #333; /* Dark text color */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.google-reviews .sort-container select:focus {
+    border-color: #007bff; /* Highlight border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Add subtle shadow */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .google-reviews {
+        padding: 12px;
+        max-width: 90%;
+    }
+
+    .google-reviews .review h4 {
+        font-size: 16px;
+    }
+
+    .google-reviews .review p {
+        font-size: 13px;
+    }
+
+    .google-reviews .load-more {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .google-reviews .sort-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .google-reviews .sort-container label {
+        margin-bottom: 8px;
+    }
+
+    .google-reviews .sort-container select {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
